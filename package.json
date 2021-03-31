@@ -1,6 +1,6 @@
 {
-  "name": "cv-template",
-  "description": "The Curriculum Vitae Template",
+  "name": "cv-aciceri",
+  "description": "Andrea Ciceri's CV",
   "scripts": {
     "build": "node src/build.js",
     "watch": "chokidar '**/*' -i 'dist/**/*' -c 'npm run build'",
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sneas/cv-project.git"
+    "url": "git+https://github.com/aciceri/cv.git"
   },
   "keywords": [
     "cv",
     "resume"
   ],
-  "author": "Dmytro Snisarenko <dmytro@sneas.io>",
+  "author": "Andrea Ciceri <andrea.ciceri@autistici.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sneas/cv-project/issues"
+    "url": "https://github.com/aciceri/cv/issues"
   },
-  "homepage": "https://github.com/sneas/cv-project#readme",
+  "homepage": "https://github.com/aciceri/cv#readme",
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "dayjs": "^1.8.28",

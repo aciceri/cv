@@ -1,13 +1,12 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: 'Andrea Ciceri',
+  title: 'Developer',
   facts: {
-    'Residence': 'London',
     'Homepage': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
                   <span class="print">https://en.wikipedia.org/wiki/William_Shakespeare</span>
                   <span class="screen">wiki</span>
                 </a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com">wil64@yahoo.com</a>'
+    'Email': '<a href="mailto:andrea.ciceri@autistici.org">andrea.ciceri@autistici.org</a>'
   },
   skills: [
     ['Comedy', '++++'],

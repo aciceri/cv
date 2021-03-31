@@ -1,3 +1,31 @@
+
+@font-face {
+  font-family: 'Latin Modern';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./cmunrm.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'Latin Modern';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./cmunti.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Latin Modern';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./cmunbx.woff') format('woff');
+}
+
+
+body {
+    font-family: Latin Modern;
+}
+
 @media print {
     body {
         font-size: 19px;

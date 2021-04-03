@@ -1,0 +1,10 @@
+* Curriculum Vitae
+
+These are the sources to generate my CV, I forked [[https://github.com/sneas/cv-template/][this template]].
+The layout was completely rewritten by me.
+
+The building and release process is automatically triggered on new
+commit on the ~master~ branch.
+Building produces the static website folder and a ~pdf~ file, both are
+released using [[https://pages.github.com][GitHub Pages]] at [[https://cv.aciceri.dev]] and on the IPFS
+network.

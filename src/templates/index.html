@@ -29,37 +29,41 @@
 
     <div class="row">
       <div class="six columns">
-        <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
+        <time datetime="{{ buildinfo.date }}" class="text-muted">
+	  Last update: {{ updated }}
+	</time>
       </div>
       <div class="six columns">
         <span class="screen download-or-print">
 	  <a href="{{ pdfFileName }}">
-	    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version
+	    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+	    Download PDF
 	  </a>
 	</span>
         <span class="print download-or-print">
-	  The online version is available at
 	  <a href="{{ baseUrl }}" class="text-nowrap">
-	    <i class="fa fa-github" aria-hidden="true"></i>
+	    <i class="fa fa-link" aria-hidden="true"></i>
 	    {{ baseUrl }}
 	  </a>
 	</span>
       </div>
     </div>
     
+    {{#each skills}}
     <div class="row">
       <div class="two columns">
-	<h3 class="screen">Skills</h3>
+	<h4>{{title}}</h4>
       </div>
       <div class="ten columns">
-	{{{markdown skills}}}
+        {{{ markdown contents }}}
       </div>
     </div>
+    {{/each}}
 
     <div class="experiences">
       <h3>Experience</h3>
     </div>
-    {{#each experience}}
+    {{#each experiences}}
     <div class="row">
       <div class="two columns">
 	<h4>{{title}}</h4>
@@ -67,20 +71,16 @@
       <div class="ten columns">
         {{{markdown contents }}}
       </div>
-      {{/each}}
     </div>
+    {{/each}}
+    
 
     <div class="row">
       <div class="two columns">
-	<h3 class="screen">Education</h3>
+	<h3>Education</h3>
       </div>
       <div class="ten columns">
-	<p>
-	  English poet, playwright and actor, widely regarded as the greatest writer in the English language
-          and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-          My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-          two long narrative poems and a few other verses, some of uncertain authorship.
-	</p>
+	{{{markdown education}}}
       </div>
     </div>
 
@@ -91,17 +91,16 @@
     <div class="row">
       <div class="two columns">
 	<h4>{{title}}</h4>
-	{{link}}
       </div>
       <div class="ten columns">
         {{{markdown contents }}}
       </div>
-      {{/each}}
     </div>
+    {{/each}}
 
     <div class="row">
       <div class="two columns">
-	<h3 class="screen">Interests</h3>
+	<h3>Interests</h3>
       </div>
       <div class="ten columns">
 	{{{markdown interests}}}

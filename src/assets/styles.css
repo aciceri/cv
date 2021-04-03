@@ -47,7 +47,6 @@ h3 {
 
 h4 {
     font-size: 2rem;
-    padding: 2rem 0 0 1rem;
 }
 
 p {
@@ -65,11 +64,23 @@ i.fa {
 
 dd.facts {
     margin: 0;
+    font-size: 1.8rem;
+}
+
+dd.facts:nth-child(1) {
+    float: left;
+}
+
+dd.facts:nth-child(2) {
+    display: inline;
+}
+
+dd.facts:nth-child(3) {
+    float: right;
 }
 
 dl.facts {
-    column-count: 3;
-    width: content;
+    text-align: center;
 }
 
 span.download-or-print {
@@ -77,16 +88,32 @@ span.download-or-print {
     display: inline-block;
     width: 100%;
     margin-bottom: 4rem;
+    font-size: 1.8rem;
 }
 
-div.experiences, div.projects {
-    position: absolute;
-    margin-top: -3rem;
-}
 
 @media print {
     .screen {
 	display: none !important;
+    }
+    div.container {
+	width: 100% !important;
+	margin: 0 !important;
+    }
+    h1 {
+	font-size: 3.6rem;
+    }
+    h2 {
+	font-size: 2.6rem;
+    }
+    h3 {
+	font-size: 2.6rem;
+    }
+    h4 {
+	font-size: 2rem;
+    }
+    p {
+	font-size: 1.5rem;
     }
 }
 
@@ -95,7 +122,26 @@ div.experiences, div.projects {
         display: none !important;
     }
 
-    @media (min-width: 576px) {
+    @media (max-width: 960px) {
+	dd.facts {
+	    width: 100%;
+	}
+
+	dl.facts {
+	    text-align: left;
+	}
+	h2 {
+	    margin-bottom: 0;
+	}
+	h4 {
+	    font-size: 2rem !important;
+	}
+	span.download-or-print {
+	    text-align: left;
+	}
+	time {
+	    display: none;
+	}
     }
 
 }

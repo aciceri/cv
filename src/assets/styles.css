@@ -123,6 +123,11 @@ span.download-or-print {
     }
 
     @media (max-width: 960px) {
+	div.container {
+	    margin: 0;
+	    padding: 1rem;
+	}
+	
 	dd.facts {
 	    width: 100%;
 	}

@@ -124,6 +124,7 @@ span.download-or-print {
 
     @media (max-width: 960px) {
 	div.container {
+	    width: 100%;
 	    margin: 0;
 	    padding: 1rem;
 	}

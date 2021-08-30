@@ -5,7 +5,7 @@ module.exports = {
 
     facts: {
 	'Homepage': `
-<a href="https://github.com/aciceri">
+<a href="https://aciceri.dev">
 <i class="fa fa-home" aria-hidden="true"></i>
 aciceri.dev
 </a>

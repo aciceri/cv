@@ -8,3 +8,5 @@ commit on the ~master~ branch.
 Building produces the static website folder and a ~pdf~ file, both are
 released using [[https://pages.github.com][GitHub Pages]] at [[https://cv.aciceri.dev]] and on the IPFS
 network.
+
+Test locally with ~npm run start~

@@ -79,6 +79,12 @@ dd.facts:nth-child(3) {
     float: right;
 }
 
+/* TODO: This is horrible, I know, no time time to rewrite it now */
+dd.facts:nth-child(4) {
+    margin-right: 3.5rem;
+    float: right;
+}
+
 dl.facts {
     text-align: center;
 }
@@ -115,6 +121,12 @@ span.download-or-print {
     p {
 	font-size: 1.5rem;
     }
+/* TODO: This is horrible, I know, no time time to rewrite it now */
+dd.facts:nth-child(4) {
+    margin-right: 10rem;
+    float: right;
+}
+
 }
 
 @media not print {

@@ -1,7 +1,7 @@
 module.exports = {
     name: 'Andrea Ciceri',
 
-    title: 'Full-stack developer',
+    title: 'Enthusiast',
 
     facts: {
 	'Homepage': `
@@ -13,16 +13,35 @@ aciceri.dev
 	'Email': `
 <a href="mailto:andrea.ciceri@autistici.org"><i class="fa fa-envelope" aria-hidden="true"></i>andrea.ciceri@autistici.org</a>
 `,
+	'Linkedin': `
+<a href="https://www.linkedin.com/in/andreaciceri/"><i class="fa fa-linkedin" aria-hidden="true"></i>andreaciceri</a>
+`,
 	'GitHub': `
 <a href="https://github.com/aciceri"><i class="fa fa-github" aria-hidden="true"></i>aciceri</a>`
     },
-    
+
     experiences: [
 	{
+	    title: 'MLabs',
+	    date: '2022 &hyphens; now',
+	    contents: `
+Managing infrastructure (mainly for DevOps) both for internal needs and for customers. Mainly using Nix to manage infrastructures as code and writing internal tooling to work with Haskell, Cardano, PureScript and Nix.
+Also worked on the Nix interpreter and on Hydra (Nix CI) as part of Cardano Catalyst proposals.
+[mlabs.city](https://mlabs.city)
+`
+},
+	{
+	    title: 'NixOS Ocean sprint',
+	    date: '2022 &hyphens; now',
+	    contents: `
+Hacked 1 week on Nix with fantastic people on the fantastic island Lanzarote: [https://oceansprint.org](https://oceansprint.org)
+`
+},
+  {
 	    title: 'BeatData',
 	    date: '2020 &hyphens; now',
 	    contents: `
-Currently working as software developer at *BeatData*, more info here: [https://beatdata.com](https://beatdata.com)
+I've designed and developed several Solidity smart contracts, often integrated with wider protocols (DeFI, NFTs, DAOs, etc..)  [https://beatdata.com](https://beatdata.com). Also extensevily worked with React (both Typescript and Javascript) and Django (Python).
 `
 	}, {
 	    title: 'Lunik Cineforum',
@@ -60,7 +79,7 @@ An open source and innovative *Decentralized Exchange* living on *Ethereum*, I m
 	}, {
 	    title: 'Cooper algorithm',
 	    contents: `
-Implemented in *C* as future part of *MCMT*, a model checker for infinite state systems based on the integration of Satisfiability Modulo Theories (SMT) solving and backward reachability.`
+Implemented in *C* as future part of *MCMT*, a model checker for infinite state systems based on the integration of Satisfiability Modulo Theories (SMT) solving and backward reachability. [Paper](https://raw.githubusercontent.com/aciceri/cooper/master/doc/elaborato.pdf).`
 	}, {
 	    title: 'LOGO interpreter',
 	    contents: `
@@ -75,22 +94,30 @@ Here the Gist: [https://git.io/JYa2x](https://git.io/JYa2x)`
 	    contents: `
 A simple container for my thoughts and experiments, having no requirements I have the maximum freedom in the technologic choises. The contents are versioned using Git and the generation is done using *Haskell* and *Nix*.
 Here the GitHub repository: [https://github.com/aciceri/blog](https://github.com/aciceri/blog)`
-	}	
+	}, {
+    title: 'My keyboard',
+    contents: `
+I've built a split keyboard, 3d-printing the case and programming a custom firmware (using QMK): [https://github.com/aciceri/lily58](https://github.com/aciceri/lily58)
+`
+  }
+
     ],
     
     skills: [
 	{
 	    title: 'Languages',
 	    contents: `
-In the professional field I worked with *Python* (Django), *JavaScript* and *Solidity*.
-For personal projects I used functional languages as *Haskell* or *Scheme*, of which I love the expressiveness.
-As student I extensively used *C*, I've also have some rudiments of *Java*, *C Sharp* and *PHP*.`
+I've a deep *Nix* knowledge since I had to work on its codebase several time.
+For blockchain develoment I feel confident with *Solidity* (also low-level EVM stuff with embedding yul) and I've a basic knowledge about Pluto.
+I did web development in the past using different languages like TypeScript and JavaScript for frontend (mainly React) and Python and Dotnet for the backend.
+I'm a big Lisp-like languages fan (I use Emacs Lisp frequently), I can work on codebases written in C, C++ and Java but I'm a big fan of functional programming, currently trying to improve my Haskell.
+I would like to study Agda and Idris in a near future.
+`
 	}, {
 	    title: 'Techonologies',
 	    contents: `
-I've experience with *DevOps* using *Git* (GitHub, GitLab) and *Docker*.
 I've a long experience with *POSIX* systems and I'm a *Nix(Os)* enthusiast since I love its declarativeness and reproducible builds.
-My appreciation of decentralized systems led me to study of *Ethereum* and *IPFS*, allowing me to work in the context of *Dapps* and *Decentralized Finance*.
+My appreciation of decentralized systems led me to study of blockchain protocols like *Ethereum* and *Cardano* and also other decentralized solutions like *IPFS*, allowing me to work in the context of *Dapps* and *Decentralized Finance*.
 `
 	}, {
 	    title: 'Softwares',
@@ -110,7 +137,7 @@ It's been a few years that I run and I've even partecipated in some races, I thi
     
     languages: `
 I 'm native Italian speaker and I've a solid command of English, in both written and spoken language. As developer I use to read and write technical documents and I actively partecipate in several online community.
-As student I've been in England and Ireland studying English where I improved my ability to hold face-to-face discussions, I'm extremely prone to improve my fluency. 
+In the last year I've also attended severval conferences in which I had the opportunity to improve my ability to hold face-to-face discussions, I'm extremely prone to improve my fluency.
 `,
-    education: `Currently I'm a math student at the University of Milan, futhermore I've an high school diploma in information technology and telecommunications.`
+  education: `I've studied Math at the "La Statale" University of Milan, futhermore I've an high school diploma in information technology and telecommunications. But I'm also quite self-taught.`
 }

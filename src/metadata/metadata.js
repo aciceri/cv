@@ -110,20 +110,20 @@ I've built a split keyboard, 3d-printing the case and programming a custom firmw
 I've a deep *Nix* knowledge since I had to work on its codebase several time.
 For blockchain develoment I feel confident with *Solidity* (also low-level EVM stuff with embedding yul) and I've a basic knowledge about Pluto.
 I did web development in the past using different languages like TypeScript and JavaScript for frontend (mainly React) and Python and Dotnet for the backend.
-I'm a big Lisp-like languages fan (I use Emacs Lisp frequently), I can work on codebases written in C, C++ and Java but I'm a big fan of functional programming, currently trying to improve my Haskell.
-I would like to study Agda and Idris in a near future.
+I'm a big Lisp-like languages fan (I use Emacs Lisp frequently), I can work on codebases written in C, C++ and Java (I could be a little rusty and not efficient).
+I'm a big fan of functional programming, currently trying to improve my Haskell. I would like to study Agda and Idris in a near future.
 `
 	}, {
 	    title: 'Techonologies',
 	    contents: `
-I've a long experience with *POSIX* systems and I'm a *Nix(Os)* enthusiast since I love its declarativeness and reproducible builds.
+I've a long experience with *POSIX* systems and I'm a *Nix(Os)* enthusiast of which I love its declarativeness and reproducible builds.
 My appreciation of decentralized systems led me to study of blockchain protocols like *Ethereum* and *Cardano* and also other decentralized solutions like *IPFS*, allowing me to work in the context of *Dapps* and *Decentralized Finance*.
 `
 	}, {
 	    title: 'Softwares',
 	    contents: `
 I've been using GNU/Linux for years, I'm comfortable with the shell and I'm used to customize my environment for greater efficiency.
-Moreover I extensively use *Emacs*, not just as a text editor. Other softwares I've dealt with in the past, in no particular order, includes *Gimp*, *Blender*, *Matlab*, *LaTeX*, *MySQL*, *SQLite*, *ANTLR* and *Arduino*.
+Moreover I extensively use *Emacs*, not just as a text editor. Other softwares I've dealt with in the past, in no particular order, includes *Terraform*, *Nomad*, *Hardhat*, *Gimp*, *Blender*, *Matlab*, *LaTeX*, *MySQL*, *SQLite*, *ANTLR* and *Arduino*.
 `
 	}
     ],

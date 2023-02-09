@@ -129,7 +129,7 @@ My appreciation of decentralized systems led me to study of blockchain protocols
 	    title: 'Softwares',
 	    contents: `
 I've been using GNU/Linux for years, I'm comfortable with the shell and I'm used to customize my environment for greater efficiency.
-Moreover I extensively use *Emacs*, not just as a text editor. Other softwares I've dealt with in the past, in no particular order, includes *Terraform*, *Nomad*, *Hardhat*, *Gimp*, *Blender*, *Matlab*, *LaTeX*, *MySQL*, *SQLite*, *ANTLR* and *Arduino*.
+Moreover I extensively use *Emacs*, not just as a text editor. Other softwares I've dealt with in the past, in no particular order, includes *Terraform*, *Nomad*, *Hercules CI*, *Hydra*, *Grafana*, *Prometheus*, *Hydra*, *Hardhat*, *Gimp*, *Blender*, *Matlab*, *LaTeX*, *MySQL*, *SQLite*, *Postgres*, *ANTLR* and *Arduino*.
 `
 	}
     ],

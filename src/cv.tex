@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume-Reversed
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{cv}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Andrea Ciceri}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+\href{mailto:john.doe@example.com}{\textrm{andrea.ciceri@autistici.org}} | \href{https://cv.aciceri.dev}{https://cv.aciceri.dev}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.75\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{MLabs}
+\descript{| DevOps engineer and Nix developer }
+\location{May 2022 - | Remote }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and maintained the infrastructure (as a code) using \textbf{NixOS} both for internal needs and for customers. 
+\item Provisioned the servers and designed the deployment for the multiple clients, including the \textbf{CI/CD pipelines}. Mainly used \textbf{Terrraform} and \textbf{NixOS} on \textbf{Hetzner}, \textbf{AWS} and \textbf{DigitalOcean}.
+\item Created and worked on different internal tools touching a variety of technologies including \textbf{Haskell}, \textbf{Cardano,} \textbf{Purescript} and \textbf{Nix}.
+\item Worked on the \textbf{Nix interpreter} and on \href{https://github.com/NixOS/hydra/}{\textbf{Hydra}} (a Nix CI tool) as part of a Catalyst proposal.
+\item Leaded the development of two Nix-related open source tools for \textbf{Cardano} (cardano.nix and spo-anywhere). 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Beatdata}
+\descript{| Full-stack engineer }
+\location{Mar 2020 – May 2022 | Milan }
+\begin{tightemize}
+\item Worked both as \textbf{frontend and backend developer} on a wide variety of different projects across different technologies like \textbf{React}, \textbf{Typescript}, \textbf{.NET}, \textbf{Django} and \textbf{Python}, always with a focus on the \textbf{DevOps aspects}.
+\item Designed and implemented a framework in Python allowing scientists to write and upload numerical algorithms and provisioning the results to external services asynchronously.
+\item Designed and implemented the \textbf{Solidity} smart contracts (and a Typescript SDK to interact with them) for an NFT exchange.
+\item Studied in depth the \textbf{Uniswap} V2 protocol and forked it in order to create a new DEX.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Open source projects}
+\vspace{+0.5em}
+\begin{tightemize}
+\item \textbf{cardano.nix}: NixOS modules to make Cardano-related deployments easier - \href{https://github.com/mlabs-haskell/cardano.nix}{github.com/mlabs-haskell/cardano.nix}
+\item \textbf{spo-anywhere}: Tool to deploy Cardano SPO nodes literally everywhere - \href{https://github.com/mlabs-haskell/spo-anywhere}{github.com/mlabs-haskell/spo-anywhere}
+\item \textbf{cardanow}: Automatically create snapshots for different Cardano softwares - \href{https://github.com/mlabs-haskell/cardanow}{github.com/mlabs-haskell/cardanow}
+\item \textbf{agenix-shell}: Share secrets using Nix development shells - \href{https://github.com/aciceri/agenix-shell}{github.com/aciceri/agenix-shell}
+\item \textbf{rock5b-nixos}: Make NixOS boot on the Rock5B SBC - \href{https://github.com/aciceri/rock5b-nixos}{github.com/aciceri/rock5b-nixos}
+\item \textbf{codroipo}: Custom ergonomic split mechanical keyboard - \href{https://github.com/aciceri/codroipo}{github.com/aciceri/codroipo}
+\item \textbf{Local Nix meetup in Milan}: Recurrent event - \href{https://milano.nix.pizza}{milano.nix.pizza}
+\item \textbf{cooper}: Cooper algorithm implemented in C for the university - \href{https://github.com/aciceri/cooper}{github.com/aciceri/cooper}
+\item \textbf{Materia}: Dex and DAO on Ethereum - \href{https://materiadex.com}{materiadex.com}
+\item \textbf{BrainFuck compiler in Python} - \href{https://git.io/JYa2x}{git.io/JYa2x}
+\end{tightemize}
+\sectionsep
+
+\section{Conferences and Hackathons}
+\vspace{+0.5em}
+\begin{tightemize}
+\item \textbf{ETHGlobal Lisbon 2023} - won first prize with Cartesi, the project involved running Nix builds in a decentralized manned on an Ethereum L2
+\item \textbf{ETHGlobal Paris 2023} - won second prize with Cartesi
+\item \textbf{ETHGlobal London 2024} - won third prize with Filecoin
+\item \textbf{ETHRome 2023} - won various prizes for an LLM-based search engine
+\item \textbf{ETHRome 2024} - won various prizes for a dapp using zero-knowledge proofs based app
+\item \textbf{Nix camp in 2023} - one week in Liverpool hacking on Nix
+\item \textbf{Ocean sprint 2022} - one week in Lanzarote hacking on Nix
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.24\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\textbullet{} C
+\textbullet{} Python
+\textbullet{} JavaScript
+\textbullet{} TypeScript
+\textbullet{} Haskell
+\textbullet{} Purescript
+\textbullet{} Nix
+\textbullet{} Solidity
+\textbullet{} Scheme
+\textbullet{} Emacs Lisp
+\sectionsep
+
+\subsection{Technology}
+\textbullet{} Git
+\textbullet{} Linux
+\textbullet{} Emacs
+\textbullet{} NixOS
+\textbullet{} Docker
+\textbullet{} Kubernetes
+\textbullet{} IPFS
+\textbullet{} Cardano
+\textbullet{} Ethereum
+\textbullet{} Org mode
+\textbullet{} GitHub
+\textbullet{} GitLab
+\textbullet{} QEMU
+\sectionsep
+
+\section{Interests}
+\textbullet{} 3d printing
+\textbullet{} OpenScad
+\textbullet{} Freecad
+\textbullet{} Kicad
+\textbullet{} Blender
+\textbullet{} Music
+\textbullet{} Category theory
+\textbullet{} Language theory
+\textbullet{} Electronics
+\textbullet{} Ham radio
+\textbullet{} DIY
+\textbullet{} Running
+\textbullet{} Cyclying
+\textbullet{} Cinema
+\textbullet{} Sci-Fi
+\textbullet{} Fiction books
+
+\sectionsep
+
+
+\section{Contacts}
+{\bf GitHub} \textrm{\href{https://github.com/}{github.com/aciceri}} \\
+{\bf Blog} \href{https://blog.aciceri.dev}{blog.aciceri.dev} \\
+{\bf LinkedIn} \href{https://www.linkedin.com/}{andreaciceri} \\
+{\bf Twitter/X} \href{https://x.com/hornedSphere99}{hornedSphere99} \\
+{\bf Mastodon} \href{https://functional.cafe/@aciceri}{@aciceri@functional.cafe} \\
+{\bf Matrix} \href{https://matrix.to/#/@aciceri:nixos.dev}{@aciceri:nixos.dev}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}

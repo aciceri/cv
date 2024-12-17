@@ -9,21 +9,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
+    - uses: DeterminateSystems/nix-installer-action@main
+    
+    - uses: DeterminateSystems/magic-nix-cache-action@main
 
-    - run: npm install
-
-    - run: npm run build
+    - run: nix build -L
 
     - name: Push on Pinata
       id: ipfs
       if: success()
       uses: aquiladev/ipfs-action@v0.3.1
       with:
-        path: ./dist
+        path: ./result
         service: pinata
         pinataKey: ${{ secrets.API_KEY }}
         pinataSecret: ${{ secrets.API_SECRET }}
@@ -49,7 +46,7 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
-        build_dir: dist/
+        build_dir: result/
         fqdn: cv.aciceri.dev
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

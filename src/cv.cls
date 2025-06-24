@@ -9,8 +9,12 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=0.75cm, vmargin=0.75cm]{geometry}
+\usepackage[hmargin=0.75cm, vmargin=0.25cm]{geometry}
 \usepackage[hidelinks]{hyperref}
+\usepackage{ulem}
+\usepackage{soul}
+\newcommand{\uhref}[2]{\href{#1}{\dotuline{#2}}}
+
 
 % Publications
 \usepackage{cite}
@@ -22,6 +26,7 @@
 \definecolor{primary}{HTML}{1b1b1b}
 \definecolor{headings}{HTML}{1b1b1b}
 \definecolor{subheadings}{HTML}{1b1b1b}
+
 
 \usepackage{lmodern}
 
